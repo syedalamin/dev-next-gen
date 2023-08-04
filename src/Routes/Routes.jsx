@@ -3,6 +3,8 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
 import Dashboard from "../Layout/Dashboard";
 import Home from "../Pages/Site/Home/Home/Home";
+import DashboardHome from "../Pages/Dashboard/DashboardHome/DashboardHome";
+import DashboardBanner from "../Pages/Dashboard/DashboardBanner/DashboardBanner";
 
 export const route = createBrowserRouter([
     {
@@ -20,7 +22,12 @@ export const route = createBrowserRouter([
         element: <Dashboard></Dashboard>,
         children: [
             {
-                path: '/dashboard'
+                path: '/dashboard',
+                element: <DashboardHome></DashboardHome>
+            },
+            {
+                path: 'banner',
+                element: <DashboardBanner></DashboardBanner>
             }
         ]
     }
