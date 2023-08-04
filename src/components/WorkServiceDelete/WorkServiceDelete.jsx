@@ -1,12 +1,11 @@
-
+import useWorkServiceSupport from "../../hooks/useWorkServiceSupport";
 import TitleSubTitle from "../TitleSubTitle/TitleSubTitle";
-import useJoinCompany from "../../hooks/useJoinCompany";
+
 import Swal from "sweetalert2";
 
-
-const CompanyDelete = () => {
-    const [companys, refetch] = useJoinCompany();
-    const handleOfficeDelete = company => {
+const WorkServiceDelete = () => {
+    const [workServiceSupport, refetch] = useWorkServiceSupport();
+    const handleOfficeDelete = workService => {
         Swal.fire({
             title: 'Are you sure?',
             text: "You won't be able to revert this!",
@@ -17,7 +16,7 @@ const CompanyDelete = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/company/${company._id}`, {
+                fetch(`http://localhost:5000/workservicesupport/${workService._id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
@@ -39,20 +38,21 @@ const CompanyDelete = () => {
             <TitleSubTitle Title="Delete"></TitleSubTitle>
             <div className="grid md:grid-cols-4 gap-4 items-center ">
                 {
-                    companys.map(company => <div
-                        key={company._id}
+                    workServiceSupport.map(workService => <div
+                        key={workService._id}
                     >
                         <div>
                             <div className="card w-full  cardbg h-60   shadow-xl">
                                 <div className="flex items-center justify-center">
                                     <div>
                                         <figure className="px-10 pt-10">
-                                            <img src={company.image} className="rounded-xl h-12" />
+                                            <img src={workService.image} className="rounded-xl h-12" />
                                         </figure>
                                         <div className="card-body items-center text-center">
                                             <div className="card-actions">
-                                                <button onClick={() => handleOfficeDelete(company)} className="btn btn-ghost bgGlash">delete</button>
+                                                <button onClick={() => handleOfficeDelete(workService)} className="btn btn-ghost bgGlash">delete</button>
                                             </div>
+                                            <p>{workService.category}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -66,5 +66,4 @@ const CompanyDelete = () => {
     );
 };
 
-export default CompanyDelete;
-
+export default WorkServiceDelete;

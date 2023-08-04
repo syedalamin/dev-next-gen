@@ -2,8 +2,7 @@
 import { FaPlay, FaTimes } from 'react-icons/fa';
 import Tilt from 'react-parallax-tilt';
 const SingleTeamVideo = ({ teamVideo }) => {
-    console.log(teamVideo)
-    const { image, video } = teamVideo;
+    const { image,  } = teamVideo;
     return (
         <div>
             <Tilt
@@ -22,7 +21,8 @@ const SingleTeamVideo = ({ teamVideo }) => {
                     </button>
                     <dialog id="my_modal_5" className="modal  modal-middle">
                         <form method="dialog" className="relative">
-                            <iframe className='w-screen h-screen ' src={`${video}`} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            {/*//TODO youtube video */}
+                            {/* <iframe className='w-screen h-screen ' src={`${video}`} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
                             <div className="modal-action  absolute  left-1/2 bottom-12  ">
                                 <button className="btn bgGlash"><FaTimes></FaTimes></button>
                             </div>

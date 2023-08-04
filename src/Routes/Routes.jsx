@@ -7,6 +7,7 @@ import DashboardHome from "../Pages/Dashboard/DashboardHome/DashboardHome";
 import DashboardBanner from "../Pages/Dashboard/DashboardBanner/DashboardBanner";
 import DashboardCompany from "../Pages/Dashboard/DashboardCompany/DashboardCompany";
 import DashboardTeamVideo from "../Pages/Dashboard/DashboardTeamVideo/DashboardTeamVideo";
+import DashboardWorkService from "../Pages/Dashboard/DashboardWorkService/DashboardWorkService";
 
 export const route = createBrowserRouter([
     {
@@ -38,6 +39,10 @@ export const route = createBrowserRouter([
             {
                 path: 'teamvideo',
                 element: <DashboardTeamVideo></DashboardTeamVideo>
+            },
+            {
+                path: 'workservice',
+                element: <DashboardWorkService></DashboardWorkService>
             }
         ]
     }

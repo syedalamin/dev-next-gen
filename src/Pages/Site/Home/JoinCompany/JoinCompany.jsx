@@ -16,7 +16,7 @@ const JoinCompany = () => {
     return (
         <div className="">
             <div className="w-11/12 mx-auto relative">
-                <SectionTitle Heading="Join 10 + Company" subHeading="Our Team Is All Experienced Individuals Who Are Passionately Dedicated To What We Do. Feel Free To Contact US Anytime For Free Guidance."></SectionTitle>
+                <SectionTitle Heading="Join 10 + Company" subHeading="Adjust your design through a wide range of theme options in the development and instantly.."></SectionTitle>
                 <div className="my-10">
                     <Swiper
                         slidesPerView={2}
