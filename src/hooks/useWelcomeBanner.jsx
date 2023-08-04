@@ -2,7 +2,7 @@ import { useQuery } from "react-query";
 
 
 const useWelcomeBanner = () => {
-    const {data: welcomeBanners = [], isLoading} = useQuery([''], async()=>{
+    const {data: welcomeBanners = [], isLoading} = useQuery(['banner'], async()=>{
         const res = await fetch('http://localhost:5000/banner')
         return res.json();
     })

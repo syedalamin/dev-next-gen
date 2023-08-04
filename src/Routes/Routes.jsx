@@ -5,6 +5,7 @@ import Dashboard from "../Layout/Dashboard";
 import Home from "../Pages/Site/Home/Home/Home";
 import DashboardHome from "../Pages/Dashboard/DashboardHome/DashboardHome";
 import DashboardBanner from "../Pages/Dashboard/DashboardBanner/DashboardBanner";
+import DashboardCompany from "../Pages/Dashboard/DashboardCompany/DashboardCompany";
 
 export const route = createBrowserRouter([
     {
@@ -28,6 +29,10 @@ export const route = createBrowserRouter([
             {
                 path: 'banner',
                 element: <DashboardBanner></DashboardBanner>
+            },
+            {
+                path: 'company',
+                element: <DashboardCompany></DashboardCompany>
             }
         ]
     }

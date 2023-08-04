@@ -1,11 +1,12 @@
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
+import TitleSubTitle from "../TitleSubTitle/TitleSubTitle";
 const img_hosting_token = import.meta.env.VITE_IMAGE_TOKEN;
 
 
 const SingleUpdateBanner = ({ banner }) => {
-    const { register, handleSubmit, reset,  formState: { errors } } = useForm();
-    const {_id} = banner;
+    const { register, handleSubmit, reset, formState: { errors } } = useForm();
+    const { _id } = banner;
 
     const img_hosting_url = `https://api.imgbb.com/1/upload?key=${img_hosting_token}`
 
@@ -18,45 +19,41 @@ const SingleUpdateBanner = ({ banner }) => {
             method: 'POST',
             body: formData
         })
-        .then(res => res.json())
-        .then(imgResponse =>{
-           const imgURL = imgResponse.data.display_url;
-           const { heading,  title, subtitle } = data;
-           const updateBanner = { heading, image: imgURL, title, subtitle, }
-            fetch(`http://localhost:5000/banner/${_id}`, {
-                method: 'PUT',
-                headers: {
-                    'content-type': 'application/json'
-                },
-                body: JSON.stringify(updateBanner)
-            })
-                .then(res => res.json())
-                .then(data => {
-                    if (data.modifiedCount > 0) {
-                        reset();
-                        Swal.fire({
-                            position: 'center',
-                            icon: 'success',
-                            title: 'Update Successful',
-                            showConfirmButton: false,
-                            timer: 1500
-                        });
-                    }
+            .then(res => res.json())
+            .then(imgResponse => {
+                const imgURL = imgResponse.data.display_url;
+                const { heading, title, subtitle } = data;
+                const updateBanner = { heading, image: imgURL, title, subtitle, }
+                fetch(`http://localhost:5000/banner/${_id}`, {
+                    method: 'PUT',
+                    headers: {
+                        'content-type': 'application/json'
+                    },
+                    body: JSON.stringify(updateBanner)
                 })
+                    .then(res => res.json())
+                    .then(data => {
+                        if (data.modifiedCount > 0) {
+                            reset();
+                            Swal.fire({
+                                position: 'center',
+                                icon: 'success',
+                                title: 'Update Successful',
+                                showConfirmButton: false,
+                                timer: 1500
+                            });
+                        }
+                    })
 
-        })
+            })
 
-
-
-
-       
-           
     }
 
     return (
         <div className="py-10">
             <div className="">
-            <div className="card w-full cardbg shadow-xl">
+                <TitleSubTitle Title="Banner Update" ></TitleSubTitle>
+                <div className="card w-full cardbg shadow-xl">
                     <div className="justify-center p-16  items-center text-center">
                         <form className="space-y-4" onSubmit={handleSubmit(onSubmit)}>
                             <div className="md:flex gap-5 items-center">
@@ -91,7 +88,7 @@ const SingleUpdateBanner = ({ banner }) => {
                                     {errors.image && <span >Your Valid Email</span>}
                                 </div>
                             </div>
-                            <button className="gradient-bg btn  w-full border-0 ">Add User</button>
+                            <button className="gradient-bg btn  w-full border-0 ">Update Banner</button>
                         </form>
                     </div>
                 </div>
