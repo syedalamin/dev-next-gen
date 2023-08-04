@@ -1,11 +1,12 @@
-import SectionTitle from "../../../components/SectionTitle/SectionTitle";
-import useJoinCompany from "../../../hooks/useJoinCompany";
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination, Autoplay } from 'swiper/modules';
+import SectionTitle from "../../../../components/SectionTitle/SectionTitle";
+import useJoinCompany from '../../../../hooks/useJoinCompany';
 
 
 const JoinCompany = () => {

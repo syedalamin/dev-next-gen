@@ -24,8 +24,8 @@ const Dashboard = () => {
                         <div className="bg-[#0b1120] pb-10  "><img src="https://i.ibb.co/kKRpHhp/Dev-NEXTGen.png" className="w-52" alt="" /></div>
                         <li><NavLink to='banner'>Banner</NavLink></li>
                         <li><NavLink to='company'>Company</NavLink></li>
+                        <li><NavLink to='teamvideo'>Team Video</NavLink></li>
                     </div>
-
                 </ul>
 
             </div>
