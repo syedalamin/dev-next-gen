@@ -26,6 +26,7 @@ const Dashboard = () => {
                         <li><NavLink to='company'>Company</NavLink></li>
                         <li><NavLink to='teamvideo'>Team Video</NavLink></li>
                         <li><NavLink to='workservice'>Work Service</NavLink></li>
+                        <li><NavLink to='clientreview'>Client Review</NavLink></li>
                     </div>
                 </ul>
 

@@ -8,6 +8,7 @@ import DashboardBanner from "../Pages/Dashboard/DashboardBanner/DashboardBanner"
 import DashboardCompany from "../Pages/Dashboard/DashboardCompany/DashboardCompany";
 import DashboardTeamVideo from "../Pages/Dashboard/DashboardTeamVideo/DashboardTeamVideo";
 import DashboardWorkService from "../Pages/Dashboard/DashboardWorkService/DashboardWorkService";
+import DashboardClientReview from "../Pages/Dashboard/DashboardClientReview/DashboardClientReview";
 
 export const route = createBrowserRouter([
     {
@@ -43,6 +44,10 @@ export const route = createBrowserRouter([
             {
                 path: 'workservice',
                 element: <DashboardWorkService></DashboardWorkService>
+            },
+            {
+                path: 'clientreview',
+                element: <DashboardClientReview></DashboardClientReview>
             }
         ]
     }

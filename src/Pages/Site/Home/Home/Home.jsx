@@ -1,3 +1,4 @@
+import ClientReview from "../ClientReview/ClientReview";
 import JoinCompany from "../JoinCompany/JoinCompany";
 import TeamVideo from "../TeamVideo/TeamVideo";
 import WelcomeBanner from "../WelcomeBanner/WelcomeBanner";
@@ -13,6 +14,7 @@ const Home = () => {
             <TeamVideo></TeamVideo>
             <Work></Work>
             <WhatServices></WhatServices>
+            <ClientReview></ClientReview>
         </div>
     );
 };
