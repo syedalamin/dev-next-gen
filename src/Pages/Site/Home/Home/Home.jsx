@@ -1,6 +1,7 @@
 import Awards from "../Awards/Awards";
 import ClientReview from "../ClientReview/ClientReview";
 import JoinCompany from "../JoinCompany/JoinCompany";
+import SomeProjects from "../SomeProjects/SomeProjects";
 import TeamVideo from "../TeamVideo/TeamVideo";
 import WelcomeBanner from "../WelcomeBanner/WelcomeBanner";
 import WhatServices from "../WhatServices/WhatServices";
@@ -17,6 +18,7 @@ const Home = () => {
             <WhatServices></WhatServices>
             <ClientReview></ClientReview>
             <Awards></Awards>
+            <SomeProjects></SomeProjects>
         </div>
     );
 };

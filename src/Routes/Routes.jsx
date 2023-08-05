@@ -10,6 +10,7 @@ import DashboardTeamVideo from "../Pages/Dashboard/DashboardTeamVideo/DashboardT
 import DashboardWorkService from "../Pages/Dashboard/DashboardWorkService/DashboardWorkService";
 import DashboardClientReview from "../Pages/Dashboard/DashboardClientReview/DashboardClientReview";
 import DashboardAwards from "../Pages/Dashboard/DashboardAwards/DashboardAwards";
+import DashboardSomeProjects from "../Pages/Dashboard/DashboardSomeProjects/DashboardSomeProjects";
 
 export const route = createBrowserRouter([
     {
@@ -53,6 +54,10 @@ export const route = createBrowserRouter([
             {
                 path: 'awards',
                 element: <DashboardAwards></DashboardAwards>
+            },
+            {
+                path: 'someproject',
+                element: <DashboardSomeProjects></DashboardSomeProjects>
             }
         ]
     }
