@@ -1,10 +1,9 @@
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 import TitleSubTitle from "../TitleSubTitle/TitleSubTitle";
-
 const img_hosting_token = import.meta.env.VITE_IMAGE_TOKEN;
 
-const ClientReviewPost = () => {
+const AwardsPost = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
     const img_hosting_url = `https://api.imgbb.com/1/upload?key=${img_hosting_token}`;
@@ -23,9 +22,9 @@ const ClientReviewPost = () => {
             .then(imgResponse => {
                 if (imgResponse.success) {
                     const imgURL = imgResponse.data.display_url;
-                    const { title, name, rating } = data;
-                    const postWork = {  image: imgURL, title, name, rating: parseFloat(rating)}
-                    fetch('http://localhost:5000/clientreview', {
+                    const { heading, title, description } = data;
+                    const postWork = {  image: imgURL, title, description, heading}
+                    fetch('http://localhost:5000/awards', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json'
@@ -58,17 +57,17 @@ const ClientReviewPost = () => {
                         <div className="md:flex gap-5 items-center">
                             <div className="form-control w-full ">
                                 <label className="label">
-                                    <span className="label-text text-white">Name</span>
+                                    <span className="label-text text-white">Title</span>
                                 </label>
-                                <input type="text"    {...register("name", { required: true })} className="input cardbg  input-bordered w-full " />
-                                {errors.name && <span >Please Name</span>}
+                                <input type="text"    {...register("title", { required: true })} className="input cardbg  input-bordered w-full " />
+                                {errors.title && <span >Please Title</span>}
                             </div>
                             <div className="form-control w-full ">
                                 <label className="label">
-                                    <span className="label-text text-white">Rating</span>
+                                    <span className="label-text text-white">Number</span>
                                 </label>
-                                <input type="text"    {...register("rating", { required: true })} className="input cardbg  input-bordered w-full " />
-                                {errors.rating && <span >Please Rating</span>}
+                                <input type="text"    {...register("heading", { required: true })} className="input cardbg  input-bordered w-full " />
+                                {errors.heading && <span >Please Rating</span>}
                             </div>
                            
                         </div>
@@ -85,8 +84,8 @@ const ClientReviewPost = () => {
                             <label className="label">
                                 <span className="label-text text-white">Description</span>
                             </label>
-                            <textarea {...register("title", { required: true })} className="textarea textarea-bordered cardbg w-full" placeholder="Bio"></textarea>
-                            {errors.title && <span >Your Valid Description</span>}
+                            <textarea {...register("description", { required: true })} className="textarea textarea-bordered cardbg w-full" placeholder="Bio"></textarea>
+                            {errors.description && <span >Your Valid Description</span>}
                         </div>
                         <button className="gradient-bg btn  flex justify-start border-0 ">Company Image</button>
                     </form>
@@ -97,4 +96,5 @@ const ClientReviewPost = () => {
     );
 };
 
-export default ClientReviewPost;
+
+export default AwardsPost;

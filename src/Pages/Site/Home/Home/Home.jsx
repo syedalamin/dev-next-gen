@@ -1,3 +1,4 @@
+import Awards from "../Awards/Awards";
 import ClientReview from "../ClientReview/ClientReview";
 import JoinCompany from "../JoinCompany/JoinCompany";
 import TeamVideo from "../TeamVideo/TeamVideo";
@@ -15,6 +16,7 @@ const Home = () => {
             <Work></Work>
             <WhatServices></WhatServices>
             <ClientReview></ClientReview>
+            <Awards></Awards>
         </div>
     );
 };

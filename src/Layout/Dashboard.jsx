@@ -19,7 +19,7 @@ const Dashboard = () => {
             </div>
             <div className="drawer-side">
                 <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
-                <ul className="menu p-4 w-80 mi-h-full bg-[#0b1120] space-y-4  text-white">
+                <ul className="menu p-4 w-80 bg-[#0b1120] space-y-4  text-white">
                     <div className=" space-y-4">
                         <div className="bg-[#0b1120] pb-10  "><img src="https://i.ibb.co/kKRpHhp/Dev-NEXTGen.png" className="w-52" alt="" /></div>
                         <li><NavLink to='banner'>Banner</NavLink></li>
@@ -27,9 +27,9 @@ const Dashboard = () => {
                         <li><NavLink to='teamvideo'>Team Video</NavLink></li>
                         <li><NavLink to='workservice'>Work Service</NavLink></li>
                         <li><NavLink to='clientreview'>Client Review</NavLink></li>
+                        <li><NavLink to='awards'>Awards</NavLink></li>
                     </div>
                 </ul>
-
             </div>
         </div>
     );
