@@ -14,6 +14,7 @@ import DashboardSomeProjects from "../Pages/Dashboard/DashboardSomeProjects/Dash
 import Contact from "../Pages/Site/Contact/Contact";
 import About from "../Pages/Site/About/About/About";
 import DashboardAboutBanner from "../Pages/Dashboard/DashboardAboutBanner/DashboardAboutBanner";
+import DashboardOurTeam from "../Pages/Dashboard/DashboardOurTeam/DashboardOurTeam";
 
 export const route = createBrowserRouter([
     {
@@ -73,6 +74,10 @@ export const route = createBrowserRouter([
             {
                 path: 'aboutbanner',
                 element: <DashboardAboutBanner></DashboardAboutBanner>
+            },
+            {
+                path: 'ourteam',
+                element: <DashboardOurTeam></DashboardOurTeam>
             }
         ]
     }

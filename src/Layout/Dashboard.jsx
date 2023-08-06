@@ -32,6 +32,7 @@ const Dashboard = () => {
                         <li><NavLink to='awards'>Awards</NavLink></li>
                         <li><NavLink to='someproject'>Some Project</NavLink></li>
                         <li><NavLink to='aboutbanner'>About Banner</NavLink></li>
+                        <li><NavLink to='ourteam'>Our Team</NavLink></li>
 
 
                      
