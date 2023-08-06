@@ -11,6 +11,9 @@ import DashboardWorkService from "../Pages/Dashboard/DashboardWorkService/Dashbo
 import DashboardClientReview from "../Pages/Dashboard/DashboardClientReview/DashboardClientReview";
 import DashboardAwards from "../Pages/Dashboard/DashboardAwards/DashboardAwards";
 import DashboardSomeProjects from "../Pages/Dashboard/DashboardSomeProjects/DashboardSomeProjects";
+import Contact from "../Pages/Site/Contact/Contact";
+import About from "../Pages/Site/About/About/About";
+import DashboardAboutBanner from "../Pages/Dashboard/DashboardAboutBanner/DashboardAboutBanner";
 
 export const route = createBrowserRouter([
     {
@@ -20,6 +23,14 @@ export const route = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>
+            },
+            {
+                path: '/about',
+                element: <About></About>
+            },
+            {
+                path: '/contact',
+                element: <Contact></Contact>
             }
         ]
     },
@@ -58,6 +69,10 @@ export const route = createBrowserRouter([
             {
                 path: 'someproject',
                 element: <DashboardSomeProjects></DashboardSomeProjects>
+            },
+            {
+                path: 'aboutbanner',
+                element: <DashboardAboutBanner></DashboardAboutBanner>
             }
         ]
     }

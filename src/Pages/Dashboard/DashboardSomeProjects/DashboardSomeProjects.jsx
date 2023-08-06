@@ -4,7 +4,7 @@ import SomeProjectsPost from "../../../components/SomeProjectsPost/SomeProjectsP
 
 const DashboardSomeProjects = () => {
     return (
-        <div>
+        <div className="py-10">
             <SomeProjectsPost></SomeProjectsPost>
             <SomeProjectsDelete></SomeProjectsDelete>
         </div>

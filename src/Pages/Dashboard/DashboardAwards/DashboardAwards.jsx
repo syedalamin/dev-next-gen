@@ -4,7 +4,7 @@ import AwardsPost from "../../../components/AwardsPost/AwardsPost";
 
 const DashboardAwards = () => {
     return (
-        <div>
+        <div className="py-10">
             <AwardsPost></AwardsPost>
             <AwardsDelete></AwardsDelete>
         </div>

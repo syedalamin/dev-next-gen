@@ -2,7 +2,9 @@ import { NavLink, Outlet } from "react-router-dom";
 import DashboardNav from "../Pages/Shared/DashboardNav/DashboardNav";
 
 
+
 const Dashboard = () => {
+    
     return (
         <div className="drawer lg:drawer-open">
             <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
@@ -29,6 +31,10 @@ const Dashboard = () => {
                         <li><NavLink to='clientreview'>Client Review</NavLink></li>
                         <li><NavLink to='awards'>Awards</NavLink></li>
                         <li><NavLink to='someproject'>Some Project</NavLink></li>
+                        <li><NavLink to='aboutbanner'>About Banner</NavLink></li>
+
+
+                     
                     </div>
                 </ul>
             </div>

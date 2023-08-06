@@ -4,7 +4,7 @@ import WorkServicePost from "../../../components/WorkServicePost/WorkServicePost
 
 const DashboardWorkService = () => {
     return (
-        <div>
+        <div className="py-10">
             <WorkServicePost></WorkServicePost>
             <WorkServiceDelete></WorkServiceDelete>
         </div>

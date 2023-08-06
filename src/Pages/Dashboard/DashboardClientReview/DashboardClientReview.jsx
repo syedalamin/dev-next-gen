@@ -4,7 +4,7 @@ import ClientReviewPost from "../../../components/ClientReviewPost/ClientReviewP
 
 const DashboardClientReview = () => {
     return (
-        <div>
+        <div className="py-10">
             <ClientReviewPost></ClientReviewPost>
             <ClientReviewDelete></ClientReviewDelete>
         </div>

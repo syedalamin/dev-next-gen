@@ -4,7 +4,7 @@ import CompanyPost from "../../../components/CompanyPost/CompanyPost";
 
 const DashboardCompany = () => {
     return (
-        <div>
+        <div className="py-10">
             <CompanyPost></CompanyPost>
             <CompanyDelete></CompanyDelete>
         </div>

@@ -3,8 +3,10 @@ import useAwards from "../../hooks/useAwards";
 import TitleSubTitle from "../TitleSubTitle/TitleSubTitle";
 
 import Swal from "sweetalert2";
+
 const AwardsDelete = () => {
     const [Awards, refetch] = useAwards();
+
     const handleOfficeDelete = award => {
         Swal.fire({
             title: 'Are you sure?',
