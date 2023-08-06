@@ -33,6 +33,7 @@ const Dashboard = () => {
                         <li><NavLink to='someproject'>Some Project</NavLink></li>
                         <li><NavLink to='aboutbanner'>About Banner</NavLink></li>
                         <li><NavLink to='ourteam'>Our Team</NavLink></li>
+                        <li><NavLink to='ouroffice'>Our Office</NavLink></li>
 
 
                      

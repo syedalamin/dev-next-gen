@@ -15,6 +15,7 @@ import Contact from "../Pages/Site/Contact/Contact";
 import About from "../Pages/Site/About/About/About";
 import DashboardAboutBanner from "../Pages/Dashboard/DashboardAboutBanner/DashboardAboutBanner";
 import DashboardOurTeam from "../Pages/Dashboard/DashboardOurTeam/DashboardOurTeam";
+import DashboardOurOffice from "../Pages/Dashboard/DashboardOurOffice/DashboardOurOffice";
 
 export const route = createBrowserRouter([
     {
@@ -78,6 +79,10 @@ export const route = createBrowserRouter([
             {
                 path: 'ourteam',
                 element: <DashboardOurTeam></DashboardOurTeam>
+            },
+            {
+                path: 'ouroffice',
+                element: <DashboardOurOffice></DashboardOurOffice>
             }
         ]
     }
