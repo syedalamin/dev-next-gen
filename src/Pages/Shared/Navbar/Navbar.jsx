@@ -10,7 +10,7 @@ const Navbar = () => {
     const navOption = <>
         <li><NavLink activeClassName="active-link" to='/'>Home</NavLink></li>
         <li><NavLink activeClassName="active-link" to='/about'>About</NavLink></li>
-        <li><NavLink activeClassName="active-link" to='/product'>Product Showcase</NavLink></li>
+        <li><NavLink activeClassName="active-link" to='/productshowcase'>Product Showcase</NavLink></li>
         <li><NavLink activeClassName="active-link" to='/blog'>Blog</NavLink></li>
     </>
     return (

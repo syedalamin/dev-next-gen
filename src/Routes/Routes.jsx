@@ -16,6 +16,9 @@ import About from "../Pages/Site/About/About/About";
 import DashboardAboutBanner from "../Pages/Dashboard/DashboardAboutBanner/DashboardAboutBanner";
 import DashboardOurTeam from "../Pages/Dashboard/DashboardOurTeam/DashboardOurTeam";
 import DashboardOurOffice from "../Pages/Dashboard/DashboardOurOffice/DashboardOurOffice";
+import ProductShowcase from "../Pages/Site/ProductShowcase/ProductShowcase/ProductShowcase";
+import DashboardProductShowcase from "../Pages/Dashboard/DashboardProductShowcase/DashboardProductShowcase";
+
 
 export const route = createBrowserRouter([
     {
@@ -29,6 +32,10 @@ export const route = createBrowserRouter([
             {
                 path: '/about',
                 element: <About></About>
+            },
+            {
+                path: '/productshowcase',
+                element: <ProductShowcase></ProductShowcase>
             },
             {
                 path: '/contact',
@@ -83,6 +90,10 @@ export const route = createBrowserRouter([
             {
                 path: 'ouroffice',
                 element: <DashboardOurOffice></DashboardOurOffice>
+            },
+            {
+                path: 'productshowcase',
+                element: <DashboardProductShowcase></DashboardProductShowcase>
             }
         ]
     }
