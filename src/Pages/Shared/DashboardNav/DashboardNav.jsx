@@ -41,8 +41,9 @@ const DashboardNav = () => {
                                 <li><NavLink activeClassName="active-link" to='/about'>About</NavLink></li>
                                 <li><NavLink activeClassName="active-link" to='/product'>Product Showcase</NavLink></li>
                                 <li><NavLink activeClassName="active-link" to='/blog'>Blog</NavLink></li>
+                                <li><NavLink activeClassName="active-link" to='/contact'>Contact</NavLink></li>
                                 <li><NavLink to='register'>Add User</NavLink></li>
-                                <li><NavLink to='/dashboard'>Dev Next Gen</NavLink></li>
+                                <li><NavLink to='/hello-coder-x/main'>Dev Next Gen</NavLink></li>
                                 <li>{user && <a className=" " onClick={handleLogOut}>LogOut</a>}</li>
 
                             </ul>}

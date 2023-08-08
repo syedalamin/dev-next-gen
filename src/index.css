@@ -4,7 +4,7 @@
 
 
 
-a.active {
+/* a.active {
     cursor: pointer;
     color: white;
     background: -webkit-linear-gradient(240deg, #bd22ffc5 20%, #ff279c 50%, #ff8800 80%);
@@ -18,10 +18,11 @@ a.active {
     padding-top: 5px ;
     padding-bottom: 5px ;
 
-}
-.menu a:hover {
+} */
+
+/* .menu a:hover {
     background: -webkit-linear-gradient(240deg, #bd22ffc5 20%, #ff279c 50%, #ff8800 80%);
-}
+} */
 
 .menu a{
     margin: 0px 5px;
@@ -29,10 +30,7 @@ a.active {
 .menu-one a{
     margin: 5px 0px;
 }
-a.active:hover{
-    background-position: 0 0;
-    border: 0;
-}
+
 
 .bgGradient {
     background-image: linear-gradient(45deg, #0d0a2c 0%, #0032ef 11%, #ff3370 56%, #1ac7ff 99%, #1ac7ff 100%);
@@ -89,7 +87,7 @@ a.active:hover{
 }
 
 .text-gradient {
-    background: -webkit-linear-gradient(0deg, #be22ff 20%, #ff279c 50%, #ff981f 80%);
+    background: linear-gradient(93.457deg, rgb(90, 194, 255) 0%, rgb(186, 254, 109) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -105,17 +103,29 @@ a.active:hover{
 }
 
 .text-gradient-title {
-    background: -webkit-linear-gradient(146deg, #ff279c 50%, #ff981f 80%);
+    background: linear-gradient(93.457deg, rgb(90, 194, 255) 0%, rgb(186, 254, 109) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 
 }
 
-.gradient-bg {
+/* .gradient-bg {
     cursor: pointer;
     color: white;
     background: -webkit-linear-gradient(240deg, #bd22ffc5 20%, #ff279c 50%, #ff8800 80%);
+    background-size: 200% 100%;
+    background-position: 90% 0;
+    transition: background-position .5s;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    border: 0;
+} */
+.gradient-bg {
+    cursor: pointer;
+    color: white;
+    background: rgb(0, 82, 204);
     background-size: 200% 100%;
     background-position: 90% 0;
     transition: background-position .5s;
@@ -128,8 +138,7 @@ a.active:hover{
 
 
 .gradient-bg:hover {
-    background-position: 0 0;
-    border: 0;
+    background-color: rgb(3, 74, 180);
 
 }
 

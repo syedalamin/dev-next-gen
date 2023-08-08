@@ -1,3 +1,5 @@
+import FavTitle from "../../../../components/FavTitle/FavTitle";
+import PageChangeTop from "../../../../components/PageChangeTop/PageChangeTop";
 import Awards from "../Awards/Awards";
 import ClientReview from "../ClientReview/ClientReview";
 import JoinCompany from "../JoinCompany/JoinCompany";
@@ -11,6 +13,8 @@ import Work from "../Work/Work";
 const Home = () => {
     return (
         <div>
+            <FavTitle FavTitle="Home"></FavTitle>
+            <PageChangeTop></PageChangeTop>
             <WelcomeBanner></WelcomeBanner>
             <JoinCompany></JoinCompany>
             <TeamVideo></TeamVideo>

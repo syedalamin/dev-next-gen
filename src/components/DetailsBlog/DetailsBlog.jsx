@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import useBlog from "../../hooks/useBlog";
+import PageChangeTop from "../PageChangeTop/PageChangeTop";
 
 
 
@@ -13,7 +14,7 @@ const DetailsBlog = () => {
 
     return (
         <div>
-            
+            <PageChangeTop></PageChangeTop>
             <div className="md:w-9/12 w-11/12 mx-auto bgGlash mt-10 rounded-lg">
                 <div className="w-11/12 mx-auto py-5 ">
                     <div className=" space-y-5">

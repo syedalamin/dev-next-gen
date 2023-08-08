@@ -1,10 +1,10 @@
 import { NavLink, Outlet } from "react-router-dom";
 import DashboardNav from "../Pages/Shared/DashboardNav/DashboardNav";
+import FavTitle from "../components/FavTitle/FavTitle";
 
 
 
 const Dashboard = () => {
-    
     return (
         <div className="drawer lg:drawer-open">
             <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
@@ -21,6 +21,7 @@ const Dashboard = () => {
             </div>
             <div className="drawer-side">
                 <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
+                <FavTitle FavTitle="Dashboard"></FavTitle>
                 <ul className="menu p-4 w-80 bg-[#0b1120] space-y-4  text-white">
                     <div className=" space-y-4">
                         <div className="bg-[#0b1120] pb-10  "><img src="https://i.ibb.co/kKRpHhp/Dev-NEXTGen.png" className="w-52" alt="" /></div>

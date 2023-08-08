@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../../providers/AuthProvider";
 
 
 const Navbar = () => {
+    const {user} = useContext(AuthContext);
     const [isOpen, setIsOpen] = useState(false);
     const toggleNavigation = () => {
         setIsOpen(!isOpen)
@@ -12,6 +14,7 @@ const Navbar = () => {
         <li><NavLink activeClassName="active-link" to='/about'>About</NavLink></li>
         <li><NavLink activeClassName="active-link" to='/productshowcase'>Product Showcase</NavLink></li>
         <li><NavLink activeClassName="active-link" to='/blog'>Blog</NavLink></li>
+        { user && <li><NavLink activeClassName="active-link" to='/hello-coder-x/main'>Dashboard</NavLink></li>}
     </>
     return (
         <div className="bg-[#0b1120] text-white">
@@ -37,7 +40,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="navbar-end p-0">
-                        <Link to='/contact' className="btn  btn-sm rounded-full gradient-bg">Contact Us</Link>
+                        <Link to='/contact' className="btn  btn-sm rounded-md gradient-bg">Contact Us</Link>
                     </div>
                 </div>
             </div>

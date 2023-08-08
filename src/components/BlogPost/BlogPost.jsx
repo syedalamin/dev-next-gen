@@ -53,6 +53,7 @@ const BlogPost = () => {
 
     return (
         <div className="">
+            
             <TitleSubTitle Title="Post"></TitleSubTitle>
             <div className="card w-full cardbg shadow-xl">
                 <div className="justify-center p-16  items-center text-center">

@@ -56,17 +56,17 @@ export const route = createBrowserRouter([
                 element: <Contact></Contact>
             },
             {
-                path: '/admin',
+                path: '/hello-coder-x',
                 element: <Login></Login>
             }
         ]
     },
     {
-        path: '/dashboard',
+        path: '/hello-coder-x/main',
         element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
         children: [
             {
-                path: '/dashboard',
+                path: '/hello-coder-x/main',
                 element: <DashboardHome></DashboardHome>
             },
             {

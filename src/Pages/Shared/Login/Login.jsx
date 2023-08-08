@@ -4,41 +4,42 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProvider";
 import Swal from "sweetalert2";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import FavTitle from "../../../components/FavTitle/FavTitle";
 
 const Login = () => {
-    const [passwordVisible, setPasswordVisible]= useState(false);
-    const {logIn} = useContext(AuthContext);
+    const [passwordVisible, setPasswordVisible] = useState(false);
+    const { logIn } = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();
-    const from = location.state?.from?.pathname || '/dashboard';
-    const togglePasswordVisibility = () =>{
+    const from = location.state?.from?.pathname || '/hello-coder-x/main';
+    const togglePasswordVisibility = () => {
         setPasswordVisible(!passwordVisible);
     }
     const { register, reset, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = data =>{
-         logIn(data.email, data.password)
-         .then(result =>{
-            const user = result.user;
-            console.log(user);
-            Swal.fire({
-                position: 'center',
-                icon: 'success',
-                title: 'Welcome To Our Dashboard',
-                showConfirmButton: false,
-                timer: 1500,
-              })
-              reset();
-             navigate(from, {replace: true});
-         })
-         .catch(error =>{
-            console.log(error.massage);
-         })
-        };
+    const onSubmit = data => {
+        logIn(data.email, data.password)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: 'Welcome To Our Dashboard',
+                    showConfirmButton: false,
+                    timer: 1500,
+                })
+                reset();
+                navigate(from, { replace: true });
+            })
+            .catch(error => {
+                console.log(error.massage);
+            })
+    };
 
     return (
         <div className="relative">
-            <div className=" filter blur-3xl absolute opacity-20 h-full w-full   bgGradient ">
-            </div>
+            <div className=" filter blur-3xl absolute opacity-20 h-full w-full   bgGradient "></div>
+            <FavTitle FavTitle="Login"></FavTitle>
             <div className="h-screen w-full flex items-center justify-center flex-col">
                 <div className="md:w-4/12 w-10/12 mx-auto">
                     <div className="card w-full loginbg text-neutral-content">
@@ -61,8 +62,8 @@ const Login = () => {
                                         <span className="label-text text-white">Password</span>
                                     </label>
                                     <div className="relative">
-                                        <input type={passwordVisible ? 'text': 'password'} placeholder="password" {...register("password", { required: true, minLength: 6, pattern: /(?=.*[A-Z].)(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z])/ })} className="input loginbg  input-bordered w-full " />
-                                        <span className="absolute inset-y-0  right-0 flex items-center pr-3 text-gray-400 cursor-pointer" onClick={togglePasswordVisibility}>{passwordVisible ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye> }</span>
+                                        <input type={passwordVisible ? 'text' : 'password'} placeholder="password" {...register("password", { required: true, minLength: 6, pattern: /(?=.*[A-Z].)(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z])/ })} className="input loginbg  input-bordered w-full " />
+                                        <span className="absolute inset-y-0  right-0 flex items-center pr-3 text-gray-400 cursor-pointer" onClick={togglePasswordVisibility}>{passwordVisible ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>}</span>
                                     </div>
                                     {errors.password?.type === 'required' && <span>Password is required</span>}
                                     {errors.password?.type === 'minLength' && <span>Password must be 6 characters</span>}

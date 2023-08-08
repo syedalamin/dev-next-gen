@@ -1,3 +1,4 @@
+
 import PaginationBlog from "../../../../components/PaginationBlog/PaginationBlog";
 import useBlog from "../../../../hooks/useBlog";
 
@@ -31,7 +32,6 @@ const ShowBlog = () => {
             <div className=" rounded-full filter blur-3xl absolute opacity-50 top-0 right-10 h-96 md:w-96 w-full hidden md:visible  bgGradient"></div>
             <div className="w-11/12 mx-auto pt-10 md:pt-0  relative">
                 <div>
-
                     <div>
                         <PaginationBlog blogs={currentPosts}></PaginationBlog>
                     </div>

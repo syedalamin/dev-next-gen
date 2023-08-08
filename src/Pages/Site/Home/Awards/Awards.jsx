@@ -1,5 +1,5 @@
+import SectionTitle from "../../../../components/SectionTitle/SectionTitle";
 import SingleAwards from "../../../../components/SingleAwards/SingleAwards";
-import TitleSubTitle from "../../../../components/TitleSubTitle/TitleSubTitle";
 import useAwards from "../../../../hooks/useAwards";
 import Tilt from 'react-parallax-tilt';
 
@@ -7,8 +7,8 @@ const Awards = () => {
     const [Awards] = useAwards();
     return (
         <div>
-            <div className="w-11/12 mx-auto">
-                <TitleSubTitle Title="Awards"></TitleSubTitle>
+            <div className="w-11/12 mx-auto py-20">
+                <SectionTitle Heading="Awards"></SectionTitle>
                 <div className="grid md:grid-cols-2 gap-5 items-center">
                     <div>
                         <Tilt

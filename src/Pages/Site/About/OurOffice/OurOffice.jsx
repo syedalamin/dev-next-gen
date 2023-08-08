@@ -7,7 +7,7 @@ const OurOffice = () => {
 
     return (
         <div>
-            <div className="w-11/12 mx-auto">
+            <div className="w-11/12 mx-auto pt-20">
                 <SectionTitle Heading="Life at Dev Next Gen"></SectionTitle>
                 <div className="grid md:grid-cols-3 gap-5">
                     {

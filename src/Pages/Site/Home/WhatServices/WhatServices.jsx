@@ -11,7 +11,7 @@ const WhatServices = () => {
     
     return (
         <div>
-            <div className="w-11/12 mx-auto">
+            <div className="w-11/12 mx-auto py-20">
                 <SectionTitle Heading="What Services I Provide You" subHeading="Adjust your design through a wide range of theme options in the development and instantly."></SectionTitle>
                 <div className="grid md:grid-cols-3 gap-5">
                     {
