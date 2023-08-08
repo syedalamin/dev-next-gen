@@ -21,6 +21,9 @@ import DashboardProductShowcase from "../Pages/Dashboard/DashboardProductShowcas
 import Blog from "../Pages/Site/Blog/Blog/Blog";
 import DashboardBlog from "../Pages/Dashboard/DashboardBlog/DashboardBlog";
 import DetailsBlog from "../components/DetailsBlog/DetailsBlog";
+import Login from "../Pages/Shared/Login/Login";
+import DashboardRegister from "../Pages/Dashboard/DashboardRegister/DashboardRegister";
+import PrivateRoute from "./PrivateRoute";
 
 
 export const route = createBrowserRouter([
@@ -51,12 +54,16 @@ export const route = createBrowserRouter([
             {
                 path: '/contact',
                 element: <Contact></Contact>
+            },
+            {
+                path: '/admin',
+                element: <Login></Login>
             }
         ]
     },
     {
         path: '/dashboard',
-        element: <Dashboard></Dashboard>,
+        element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
         children: [
             {
                 path: '/dashboard',
@@ -109,6 +116,10 @@ export const route = createBrowserRouter([
             {
                 path: 'blog',
                 element: <DashboardBlog></DashboardBlog>
+            },
+            {
+                path: 'register',
+                element: <DashboardRegister></DashboardRegister>
             }
         ]
     }
