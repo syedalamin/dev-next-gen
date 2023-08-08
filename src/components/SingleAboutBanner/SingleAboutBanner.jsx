@@ -6,7 +6,7 @@ const SingleAboutBanner = ({about}) => {
     return (
         <div>
             <TitleSubTitle Title={heading} subTitle={subHeading} ></TitleSubTitle>
-            <div className='w-10/12 mx-auto py-10 '>
+            <div className='w-10/12 mx-auto '>
                 <Tilt
                     tiltAngleXInitial={50}
                     className="parallax-effect-img"
@@ -17,7 +17,7 @@ const SingleAboutBanner = ({about}) => {
                     gyroscope={true}
                 >
                     <div >
-                        <img src={`${image}`} className="rounded-2xl w-full h-full " alt="pic" />
+                        <img src={image} className="rounded-2xl w-full h-full " />
                     </div>
                 </Tilt>
             </div>

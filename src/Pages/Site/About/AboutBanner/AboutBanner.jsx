@@ -1,5 +1,4 @@
 
-
 import SingleAboutBanner from "../../../../components/SingleAboutBanner/SingleAboutBanner";
 import useAboutBanner from "../../../../hooks/useAboutBanner";
 

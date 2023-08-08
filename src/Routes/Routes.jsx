@@ -18,6 +18,9 @@ import DashboardOurTeam from "../Pages/Dashboard/DashboardOurTeam/DashboardOurTe
 import DashboardOurOffice from "../Pages/Dashboard/DashboardOurOffice/DashboardOurOffice";
 import ProductShowcase from "../Pages/Site/ProductShowcase/ProductShowcase/ProductShowcase";
 import DashboardProductShowcase from "../Pages/Dashboard/DashboardProductShowcase/DashboardProductShowcase";
+import Blog from "../Pages/Site/Blog/Blog/Blog";
+import DashboardBlog from "../Pages/Dashboard/DashboardBlog/DashboardBlog";
+import DetailsBlog from "../components/DetailsBlog/DetailsBlog";
 
 
 export const route = createBrowserRouter([
@@ -36,6 +39,14 @@ export const route = createBrowserRouter([
             {
                 path: '/productshowcase',
                 element: <ProductShowcase></ProductShowcase>
+            },
+            {
+                path: '/blog',
+                element: <Blog></Blog>
+            },
+            {
+                path: '/blog/:url',
+                element: <DetailsBlog></DetailsBlog>
             },
             {
                 path: '/contact',
@@ -94,6 +105,10 @@ export const route = createBrowserRouter([
             {
                 path: 'productshowcase',
                 element: <DashboardProductShowcase></DashboardProductShowcase>
+            },
+            {
+                path: 'blog',
+                element: <DashboardBlog></DashboardBlog>
             }
         ]
     }
