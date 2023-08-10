@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Poppins:wght@300;400;500;600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: 'Hammersmith One', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
 
 
 
@@ -24,10 +30,11 @@
     background: -webkit-linear-gradient(240deg, #bd22ffc5 20%, #ff279c 50%, #ff8800 80%);
 } */
 
-.menu a{
+.menu a {
     margin: 0px 5px;
 }
-.menu-one a{
+
+.menu-one a {
     margin: 5px 0px;
 }
 
@@ -59,12 +66,14 @@
     background: rgba(38, 55, 100, 0.425);
     border: 1px solid rgba(38, 55, 100, 0.425);
 }
-.loginbg{
+
+.loginbg {
     color: white;
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.15);
 }
-.cardbg{
+
+.cardbg {
     color: white;
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.15);
@@ -141,7 +150,3 @@
     background-color: rgb(3, 74, 180);
 
 }
-
-
-
-

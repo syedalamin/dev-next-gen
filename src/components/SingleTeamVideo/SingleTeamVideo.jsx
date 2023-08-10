@@ -15,7 +15,7 @@ const SingleTeamVideo = ({ teamVideo }) => {
                 gyroscope={true}
             >
                 <div className="relative">
-                    <img src={`${image}`} className="rounded-2xl w-full h-[500px] " alt="pic" />
+                    <img src={`${image}`} className="rounded-2xl w-full md:h-[500px] h-[200px] " alt="pic" />
                     <button onClick={() => window.my_modal_5.showModal()} className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bgGlash p-5 rounded-full ">
                         <FaPlay className=' text-2xl text-teal-500'></FaPlay>
                     </button>

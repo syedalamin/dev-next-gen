@@ -3,23 +3,22 @@ import useClientReview from "../../../../hooks/useClientReview";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
+
 import { Rating } from '@smastrom/react-rating';
 import '@smastrom/react-rating/style.css';
 const ClientReview = () => {
     const [clientReview] = useClientReview();
     return (
-        <div>
+        <div className="relative">
+            <div className="rounded-full filter blur-3xl absolute top-0 right-0 h-96 md:w-96 w-full  bg-gradient-to-l from-blue-600 to-sky-400  opacity-30 "></div>
+            <div className="rounded-full filter blur-3xl absolute top-0 left-0 h-96 md:w-96 w-full  bg-gradient-to-r from-violet-600 to-indigo-800 opacity-30"></div>
             <div className="w-11/12 mx-auto">
                 <SectionTitle Heading="Client Review"></SectionTitle>
-
                 <div>
                     <Swiper
                         slidesPerView={1}
                         spaceBetween={10}
-                        pagination={{
-                            clickable: true,
-                        }}
+                        
                         breakpoints={{
                             640: {
                                 slidesPerView: 1,
@@ -34,7 +33,7 @@ const ClientReview = () => {
                                 spaceBetween: 30,
                             },
                         }}
-                        modules={[Pagination]}
+                       
                         className="mySwiper"
                     >
                         <div>
@@ -53,6 +52,7 @@ const ClientReview = () => {
                                             </div>
                                             <p>{client.title}</p>
                                             <h2 className="card-title">{client.name}</h2>
+                                            <p>{client.position}</p>
                                             <div>
                                                 <Rating
                                                     style={{ maxWidth: 100 }}

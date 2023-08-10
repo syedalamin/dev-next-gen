@@ -2,7 +2,8 @@ import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { useForm } from "react-hook-form";
 import { Link } from 'react-router-dom';
-import { FaFacebookF, FaLinkedinIn, FaTwitter, FaPhoneAlt, FaBehance,  FaArrowAltCircleDown } from 'react-icons/fa'
+import { FaFacebookF, FaLinkedinIn, FaTwitter, FaPhoneAlt, FaBehance,   } from 'react-icons/fa'
+import { MdKeyboardArrowDown} from 'react-icons/md'
 import { GoMail } from 'react-icons/go'
 import PageChangeTop from '../../../components/PageChangeTop/PageChangeTop';
 import FavTitle from '../../../components/FavTitle/FavTitle';
@@ -40,14 +41,14 @@ const Contact = () => {
                                         <GoMail></GoMail>
                                     </button>
                                     <h2 className='text-3xl font-bold'>For Query</h2>
-                                    <p>gmail.com</p>
+                                    <p>info@devnextgen.net</p>
                                 </div>
                                 <div className='space-y-4'>
                                     <button className=" inputbg rounded-full p-4 ">
                                         <FaPhoneAlt></FaPhoneAlt>
                                     </button>
                                     <h2 className='text-3xl font-bold'>Call us</h2>
-                                    <p>013********</p>
+                                    <p>+8801786281565</p>
                                 </div>
                             </div>
                             <div className='grid grid-cols-2 py-5 '>
@@ -114,12 +115,12 @@ const Contact = () => {
                                             </label>
                                             <div className='relative'>
                                                 <select {...register("subject", { required: true })} className="select select-bordered w-full inputbg ">
-                                                    <option className="bg-slate-600 "></option>
+                                                    <option className="bg-slate-600 disabled selected ">Select Now</option>
                                                     <option className="bg-slate-600 ">Web_Development</option>
                                                     <option className="bg-slate-600 ">App_Development</option>
                                                     <option className="bg-slate-600 ">Digital_Marketing</option>
                                                 </select>
-                                                <span className="absolute inset-y-0  right-0 flex items-center pr-3 text-gray-400 cursor-pointer"><FaArrowAltCircleDown></FaArrowAltCircleDown></span>
+                                                <span className="absolute inset-y-0  right-0 flex items-center pr-3 text-gray-400 cursor-pointer"><MdKeyboardArrowDown></MdKeyboardArrowDown></span>
                                             </div>
                                             {errors.subject && <span className='text-red-600'>This field is required</span>}
                                         </div>

@@ -23,8 +23,8 @@ const ClientReviewPost = () => {
             .then(imgResponse => {
                 if (imgResponse.success) {
                     const imgURL = imgResponse.data.display_url;
-                    const { title, name, rating } = data;
-                    const postWork = {  image: imgURL, title, name, rating: parseFloat(rating)}
+                    const { title, name, rating , position} = data;
+                    const postWork = {  image: imgURL, title, name, rating: parseFloat(rating), position}
                     fetch('http://localhost:5000/clientreview', {
                         method: 'POST',
                         headers: {
@@ -70,7 +70,6 @@ const ClientReviewPost = () => {
                                 <input type="text"    {...register("rating", { required: true })} className="input cardbg  input-bordered w-full " />
                                 {errors.rating && <span >Please Rating</span>}
                             </div>
-                           
                         </div>
                         <div className="md:flex gap-5 items-center">
                             <div className="form-control w-full ">
@@ -79,6 +78,13 @@ const ClientReviewPost = () => {
                                 </label>
                                 <input type="file"   {...register("image", { required: true })} className="file-input cardbg file-input-success  file-input-bordered w-full " />
                                 {errors.image && <span >Your Valid Image</span>}
+                            </div>
+                            <div className="form-control w-full ">
+                                <label className="label">
+                                    <span className="label-text text-white">Position</span>
+                                </label>
+                                <input type="text"    {...register("position", { required: true })} className="input cardbg  input-bordered w-full " />
+                                {errors.position && <span >Please Position</span>}
                             </div>
                         </div>
                         <div>

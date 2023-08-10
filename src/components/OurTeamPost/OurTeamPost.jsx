@@ -72,10 +72,14 @@ const OurTeamPost = () => {
                                     <option className="bg-slate-600 ">Web Designer</option>
                                     <option className="bg-slate-600 ">React Js Developer</option>
                                     <option className="bg-slate-600 ">Web Developer</option>    
+                                    <option className="bg-slate-600 ">Front-End Developer</option>    
+                                    <option className="bg-slate-600 ">Back-End Developer</option>    
                                     <option className="bg-slate-600 ">Full Stack Developer</option>    
                                     <option className="bg-slate-600 ">MERN Stack Developer</option>    
                                     <option className="bg-slate-600 ">App Developer</option>
                                     <option className="bg-slate-600 ">Digital Marketer</option>
+                                    <option className="bg-slate-600 ">Wordpress Developer</option>
+                                    <option className="bg-slate-600 ">Shopify Developer</option>
                                 </select>
                                 {errors.position && <span >Please Select </span>}
                             </div>
