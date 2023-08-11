@@ -27,7 +27,7 @@ const WorkServicePost = () => {
                     const imgURL = imgResponse.data.display_url;
                     const { title, description, category } = data;
                     const postWork = { description, image: imgURL, title, category}
-                    fetch('http://localhost:5000/workservicesupport', {
+                    fetch('https://dev-next-gen-server.vercel.app/workservicesupport', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json'

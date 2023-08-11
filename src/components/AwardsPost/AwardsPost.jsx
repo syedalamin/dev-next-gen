@@ -24,7 +24,7 @@ const AwardsPost = () => {
                     const imgURL = imgResponse.data.display_url;
                     const { heading, title, description } = data;
                     const postWork = {  image: imgURL, title, description, heading}
-                    fetch('http://localhost:5000/awards', {
+                    fetch('https://dev-next-gen-server.vercel.app/awards', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json'

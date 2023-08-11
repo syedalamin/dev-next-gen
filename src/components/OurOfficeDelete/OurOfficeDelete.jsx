@@ -18,7 +18,7 @@ const OurOfficeDelete = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/ouroffice/${office._id}`, {
+                fetch(`https://dev-next-gen-server.vercel.app/ouroffice/${office._id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

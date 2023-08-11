@@ -15,8 +15,8 @@ const JoinCompany = () => {
             <div className="rounded-full filter blur-3xl absolute top-0 left-0 h-96 md:w-96 w-full  bg-gradient-to-l from-blue-600 to-sky-400  opacity-30 "></div>
             <div className="rounded-full filter blur-3xl absolute top-10 right-0 h-96 md:w-96 w-full  bg-gradient-to-r from-violet-600 to-indigo-800 opacity-30"></div>
             <div className="w-11/12 mx-auto relative">
-                <SectionTitle Heading="Join 10 + Company" subHeading="Adjust your design through a wide range of theme options in the development and instantly.."></SectionTitle>
-                <div className="my-10">
+                <SectionTitle Heading="Join 10 + Company"></SectionTitle>
+                <div className="my-3">
                     <Swiper
                         slidesPerView={2}
                         spaceBetween={20}

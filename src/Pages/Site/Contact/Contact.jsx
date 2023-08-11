@@ -42,6 +42,7 @@ const Contact = () => {
                                     </button>
                                     <h2 className='text-3xl font-bold'>For Query</h2>
                                     <p>info@devnextgen.net</p>
+                                    <p>5no Tarapur Savar, Dhaka</p>
                                 </div>
                                 <div className='space-y-4'>
                                     <button className=" inputbg rounded-full p-4 ">
@@ -51,29 +52,14 @@ const Contact = () => {
                                     <p>+8801786281565</p>
                                 </div>
                             </div>
-                            <div className='grid grid-cols-2 py-5 '>
-                                <div className='space-y-4'>
-                                    <button className=" inputbg rounded-full p-4 ">
-                                        <GoMail></GoMail>
-                                    </button>
-                                    <h2 className='text-3xl font-bold'>For Query</h2>
-                                    <p>gmail.com</p>
-                                </div>
-                                <div className='space-y-4'>
-                                    <button className=" inputbg rounded-full p-4 ">
-                                        <FaPhoneAlt></FaPhoneAlt>
-                                    </button>
-                                    <h2 className='text-3xl font-bold'>Call us</h2>
-                                    <p>013********</p>
-                                </div>
-                            </div>
+                          
                             <div className='mt-10 space-x-5'>
-                                <Link>
+                                <Link to='https://web.facebook.com/Devnextgen.net' target='_blank'>
                                     <button className="  inputbg rounded-full p-4 hover:scale-125 duration-300">
                                         <FaFacebookF></FaFacebookF>
                                     </button>
                                 </Link>
-                                <Link>
+                                <Link  to='https://www.linkedin.com/company/devnextgen/' target='_blank'>
                                     <button className="  inputbg rounded-full p-4 hover:scale-125 duration-300">
                                         <FaLinkedinIn></FaLinkedinIn>
                                     </button>

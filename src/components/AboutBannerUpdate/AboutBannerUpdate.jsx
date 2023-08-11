@@ -24,7 +24,7 @@ const AboutBannerUpdate = ({about}) => {
                 const imgURL = imgResponse.data.display_url;
                 const { heading, subHeading,} = data;
                 const updateAboutBanner = { heading, image: imgURL,  subHeading, }
-                fetch(`http://localhost:5000/aboutBanner/${_id}`, {
+                fetch(`https://dev-next-gen-server.vercel.app/aboutBanner/${_id}`, {
                     method: 'PUT',
                     headers: {
                         'content-type': 'application/json'

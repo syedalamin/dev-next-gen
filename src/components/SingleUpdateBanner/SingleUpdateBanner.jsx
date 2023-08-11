@@ -24,7 +24,7 @@ const SingleUpdateBanner = ({ banner }) => {
                 const imgURL = imgResponse.data.display_url;
                 const { heading, title, subtitle } = data;
                 const updateBanner = { heading, image: imgURL, title, subtitle, }
-                fetch(`http://localhost:5000/banner/${_id}`, {
+                fetch(`https://dev-next-gen-server.vercel.app/banner/${_id}`, {
                     method: 'PUT',
                     headers: {
                         'content-type': 'application/json'

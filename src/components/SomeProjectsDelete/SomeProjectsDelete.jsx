@@ -16,7 +16,7 @@ const SomeProjectsDelete = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/someprojects/${projects._id}`, {
+                fetch(`https://dev-next-gen-server.vercel.app/someprojects/${projects._id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

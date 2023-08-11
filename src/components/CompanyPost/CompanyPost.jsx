@@ -25,7 +25,7 @@ const CompanyPost = () => {
                 if (imgResponse.success) {
                     const imgURL = imgResponse.data.display_url;
                     const postCompany = { image:imgURL };
-                    fetch('http://localhost:5000/company', {
+                    fetch('https://dev-next-gen-server.vercel.app/company', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json'

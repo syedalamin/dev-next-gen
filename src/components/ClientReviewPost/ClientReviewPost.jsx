@@ -25,7 +25,7 @@ const ClientReviewPost = () => {
                     const imgURL = imgResponse.data.display_url;
                     const { title, name, rating , position} = data;
                     const postWork = {  image: imgURL, title, name, rating: parseFloat(rating), position}
-                    fetch('http://localhost:5000/clientreview', {
+                    fetch('https://dev-next-gen-server.vercel.app/clientreview', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json'

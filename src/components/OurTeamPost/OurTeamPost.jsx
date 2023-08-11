@@ -26,7 +26,7 @@ const OurTeamPost = () => {
                     const imgURL = imgResponse.data.display_url;
                     const { name,  position} = data;
                     const postWork = { name, position, image: imgURL, }
-                    fetch('http://localhost:5000/ourteams', {
+                    fetch('https://dev-next-gen-server.vercel.app/ourteams', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json'

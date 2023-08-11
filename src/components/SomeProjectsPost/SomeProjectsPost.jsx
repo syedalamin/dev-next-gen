@@ -25,7 +25,7 @@ const SomeProjectsPost = () => {
                     const imgURL = imgResponse.data.display_url;
                     const { category,liveLink, title} = data;
                     const postWork = { liveLink, image: imgURL, title, category }
-                    fetch('http://localhost:5000/someprojects', {
+                    fetch('https://dev-next-gen-server.vercel.app/someprojects', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json'
@@ -68,10 +68,10 @@ const SomeProjectsPost = () => {
                                     <span className="label-text text-white">Category</span>
                                 </label>
                                 <select {...register("category", { required: true })} className="select select-bordered w-full cardbg ">
-                                    <option className="bg-slate-600 ">Web_Design</option>
-                                    <option className="bg-slate-600 ">Web_Development</option>
-                                    <option className="bg-slate-600 ">App_Development</option>
-                                    <option className="bg-slate-600 ">Digital_Marketing</option>
+                                    <option className="bg-slate-600 ">Web Design</option>
+                                    <option className="bg-slate-600 ">Web Development</option>
+                                    <option className="bg-slate-600 ">App Development</option>
+                                    <option className="bg-slate-600 ">Digital Marketing</option>
                                 </select>
                                 {errors.category && <span >Please Select </span>}
                             </div>

@@ -20,7 +20,7 @@ const Footer = () => {
                         <div className='p-10 mx-auto rounded-lg inputbg'>
                             <div className="flex justify-center text-center items-center ">
                                 <div className="space-y-5">
-                                    <h2 className="text-5xl font-bold py-4 text-gradient">Not Just Another Design Agency.</h2>
+                                    <h2 className="text-5xl font-bold py-4 text-gradient">Let s build something great together!</h2>
                                     <p>Behold the power of innovation and skyrocket <br /> your business with a true out of the obx web development Agency</p>
                                     <Link to='/contact' className="btn  rounded-full px-10 gradient-bg">Lets Talk</Link>
                                 </div>
@@ -34,10 +34,14 @@ const Footer = () => {
                             <PiCopyrightDuotone></PiCopyrightDuotone>
                             <p>Dev-Next-Gen 2023</p>
                         </div>
-                        <div className='flex space-x-5 items-center'>
-                            <FaFacebookF></FaFacebookF>
+                        <div className='flex space-x-5 items-center z-50'>
+                            <Link to='https://web.facebook.com/Devnextgen.net' target='_blank'>
+                                <FaFacebookF></FaFacebookF>
+                            </Link>
                             <FaTwitter></FaTwitter>
-                            <FaLinkedinIn></FaLinkedinIn>
+                            <Link to='https://web.facebook.com/Devnextgen.net' target='_blank'>
+                                <FaLinkedinIn></FaLinkedinIn>
+                            </Link>
                         </div>
                     </div>
                 </div>

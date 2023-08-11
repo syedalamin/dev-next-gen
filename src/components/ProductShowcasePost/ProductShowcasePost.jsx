@@ -26,7 +26,7 @@ const ProductShowcasePost = () => {
                     const imgURL = imgResponse.data.display_url;
                     const {  title, liveLink} = data;
                     const postProduct = { title, subtitle: "Let’s See Portfolio", liveLink, image: imgURL, }
-                    fetch('http://localhost:5000/productshowcase', {
+                    fetch('https://dev-next-gen-server.vercel.app/productshowcase', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json'

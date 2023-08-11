@@ -13,7 +13,7 @@ const ProductBannerUpdate = ({ productBanner }) => {
         const { title, subTitle } = data;
         const updateBanner = { title, subTitle, }
 
-        fetch(`http://localhost:5000/productshowcasebanner/${_id}`, {
+        fetch(`https://dev-next-gen-server.vercel.app/productshowcasebanner/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

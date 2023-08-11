@@ -24,7 +24,7 @@ const OurOfficePost = () => {
                 if (imgResponse.success) {
                     const imgURL = imgResponse.data.display_url;
                     const postOffice = { image:imgURL };
-                    fetch('http://localhost:5000/ouroffice', {
+                    fetch('https://dev-next-gen-server.vercel.app/ouroffice', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json'

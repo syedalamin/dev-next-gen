@@ -27,7 +27,7 @@ const BlogPost = () => {
                     const imgURL = imgResponse.data.display_url;
                     const { url, title, subtitle, titleone,  titletwo, titlethree, titlefour, titlefive, subtitleone, subtitletwo, subtitlethree, subtitlefour, subtitlefive } = data;
                     const postBlog = { url, image: imgURL, title, subtitle, titleone,  titletwo, titlethree, titlefour, titlefive, subtitleone, subtitletwo, subtitlethree, subtitlefour, subtitlefive }
-                    fetch('http://localhost:5000/blog', {
+                    fetch('https://dev-next-gen-server.vercel.app/blog', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json'

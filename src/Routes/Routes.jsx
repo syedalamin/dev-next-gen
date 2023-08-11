@@ -24,12 +24,14 @@ import DetailsBlog from "../components/DetailsBlog/DetailsBlog";
 import Login from "../Pages/Shared/Login/Login";
 import DashboardRegister from "../Pages/Dashboard/DashboardRegister/DashboardRegister";
 import PrivateRoute from "./PrivateRoute";
+import ErrorPage from "../Pages/Shared/ErrorPage/ErrorPage";
 
 
 export const route = createBrowserRouter([
     {
         path: '/',
         element: <Main></Main>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',

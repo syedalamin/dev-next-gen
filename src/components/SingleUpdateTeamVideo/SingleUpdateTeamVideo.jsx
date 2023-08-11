@@ -24,7 +24,7 @@ const SingleUpdateTeamVideo = ({teamVideo}) => {
                 const imgURL = imgResponse.data.display_url;
                 const { video} = data;
                 const updateTeamVideo = { video, image: imgURL, }
-                fetch(`http://localhost:5000/teamvideo/${_id}`, {
+                fetch(`https://dev-next-gen-server.vercel.app/teamvideo/${_id}`, {
                     method: 'PUT',
                     headers: {
                         'content-type': 'application/json'

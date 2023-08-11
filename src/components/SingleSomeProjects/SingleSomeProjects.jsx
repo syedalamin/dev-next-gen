@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const SingleSomeProjects = ({ project }) => {
-    console.log(project)
+
     const { category, image, liveLink, title } = project;
 
     return (
