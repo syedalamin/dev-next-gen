@@ -20,9 +20,9 @@ const Footer = () => {
                         <div className='p-10 mx-auto rounded-lg inputbg'>
                             <div className="flex justify-center text-center items-center ">
                                 <div className="space-y-5">
-                                    <h2 className="text-5xl font-bold py-4 text-gradient">Let s build something great together!</h2>
-                                    <p>Behold the power of innovation and skyrocket <br /> your business with a true out of the obx web development Agency</p>
-                                    <Link to='/contact' className="btn  rounded-full px-10 gradient-bg">Lets Talk</Link>
+                                    <h2 className="text-5xl font-bold py-4 text-gradient">Let's build something great together!</h2>
+                                    <p>Next Level Agency for Startups & Entrepreneurs ✌️ Give Us a Call to Speak with a Website Design, <br /> Development & Marketing Expert!</p>
+                                    <Link to='/contact' className="btn  rounded-full px-10 gradient-bg">Let's Talk</Link>
                                 </div>
                             </div>
                         </div>
