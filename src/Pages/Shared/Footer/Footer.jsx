@@ -38,7 +38,9 @@ const Footer = () => {
                             <Link to='https://web.facebook.com/Devnextgen.net' target='_blank'>
                                 <FaFacebookF></FaFacebookF>
                             </Link>
-                            <FaTwitter></FaTwitter>
+                            <Link to='https://twitter.com/DevNextGen.net' target='_blank'>
+                                <FaTwitter></FaTwitter>
+                            </Link>
                             <Link to='https://web.facebook.com/Devnextgen.net' target='_blank'>
                                 <FaLinkedinIn></FaLinkedinIn>
                             </Link>

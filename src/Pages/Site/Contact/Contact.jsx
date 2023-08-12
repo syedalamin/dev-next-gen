@@ -64,7 +64,7 @@ const Contact = () => {
                                         <FaLinkedinIn></FaLinkedinIn>
                                     </button>
                                 </Link>
-                                <Link>
+                                <Link to='https://twitter.com/DevNextGen.net' target='_blank'>
                                     <button className="  inputbg rounded-full p-4 hover:scale-125 duration-300">
                                         <FaTwitter></FaTwitter>
                                     </button>
