@@ -84,14 +84,14 @@ const Contact = () => {
                                             <label className="label">
                                                 <span className="label-text text-white">Your Name</span>
                                             </label>
-                                            <input type="text" placeholder="Type here"  {...register('name', { required: true })} className="input input-bordered w-full  inputbg" />
+                                            <input type="text" placeholder="Your Name"  {...register('name', { required: true })} className="input input-bordered w-full  inputbg" />
                                             {errors.name && <span className='text-red-600'>This field is required</span>}
                                         </div>
                                         <div className="form-control w-full  ">
                                             <label className="label">
                                                 <span className="label-text text-white">Your Email Address</span>
                                             </label>
-                                            <input type="email" placeholder="Type here"  {...register('email', { required: true })} className="input input-bordered w-full  inputbg" />
+                                            <input type="email" placeholder="Your E-Mail"  {...register('email', { required: true })} className="input input-bordered w-full  inputbg" />
                                             {errors.email && <span className='text-red-600'>This field is required</span>}
                                         </div>
 
@@ -114,7 +114,7 @@ const Contact = () => {
                                             <label className="label">
                                                 <span className="label-text text-white">Your Message</span>
                                             </label>
-                                            <textarea className="textarea textarea-bordered h-24 w-full  inputbg" {...register('message', { required: true })} placeholder="Bio"></textarea>
+                                            <textarea className="textarea textarea-bordered h-24 w-full  inputbg" {...register('message', { required: true })} placeholder="Your Message"></textarea>
                                             {errors.message && <span className='text-red-600'>This field is required</span>}
                                         </div>
                                         <input className='w-full gradient-bg rounded-lg btn' type="submit" />
